@@ -22,11 +22,11 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Increase counter"/>
                                 <connections>
-                                    <action selector="Increase" destination="BYZ-38-t0r" eventType="touchUpInside" id="MsK-bv-72e"/>
+                                    <action selector="increase" destination="BYZ-38-t0r" eventType="touchUpInside" id="fTd-Lh-pIO"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpX-4U-4OI">
-                                <rect key="frame" x="58" y="151" width="276" height="121"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpX-4U-4OI" userLabel="Title Text Field">
+                                <rect key="frame" x="58" y="149" width="276" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
@@ -37,8 +37,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="IncreaseButton" destination="Xng-Ae-AdZ" id="Bji-KH-TXn"/>
-                        <outlet property="TextField" destination="lpX-4U-4OI" id="7tj-l2-Bww"/>
+                        <outlet property="titleTextField" destination="lpX-4U-4OI" id="TN5-3C-9ok"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

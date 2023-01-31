@@ -1,35 +1,27 @@
-//
-//  ViewController.swift
-//  tasks
-//
-//  Created by Daniil on 13.01.2023.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var IncreaseButton: UIButton!
-    @IBOutlet weak var TextField: UILabel!
+    @IBOutlet weak private var titleTextField: UILabel!
     
-    private let startPhrase: String = "Значение счётчика:";
+    private let startPhrase: String = "Значение счётчика: ";
     private var counter = 0;
     
-    func buildPhrase() -> String {
-        return startPhrase + " " + String(counter)
+    private func buildPhrase() -> String {
+        return startPhrase + String(counter)
     }
     
-    func updateText() {
-        TextField.text = buildPhrase()
+    private func updateText() {
+        titleTextField.text = buildPhrase()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        TextField.text = buildPhrase()
+
+        titleTextField.text = buildPhrase()
     }
 
     
-    @IBAction func Increase() {
+    @IBAction private func increase() {
         counter += 1;
         updateText()
     }
